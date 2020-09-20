@@ -4,11 +4,8 @@ answers0 = ["yes", "no", "maybe", "pp", "PP"]
 answers1 = ["yes", "no", "maybe", "vibing away", "vibe rater"]
 answers2 = ["good", "bad", "kys", "kms", "stfu"]
 answers3 = ["bruh", "BRUH", "bRuH", "bruhh", "*bruh*"]
-
 answers = [answers0, answers1, answers2, answers3]
 universities = ["MIT", "Harvard", "Cainbridge", "Oxford", "yale"]
-
-
 def questionsFunc(i):
     print(questions[i])
     answerList = answers[i]
@@ -23,7 +20,7 @@ for question in questions:
     print(" ")
     questionsFunc(i)
     i+=1
-
+print (" ")
 if (points[0] > points[1] and points[0] > points[2] and points[0] > points[3] and points[0] > points[4]):
     print ("You are going to " + universities[0])
 elif (points[1] > points[2] and points[1] > points[3] and points[1] > points[4]):
@@ -34,7 +31,7 @@ elif (points[3] > points[4]):
     print ("You are going to " + universities[3])
 else:
     print ("You are going to " + universities[4])
-
+print (" ")
 
 
 

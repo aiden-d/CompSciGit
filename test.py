@@ -1,1 +1,2 @@
-print("test")
+yeet 
+print(int(yeet))
