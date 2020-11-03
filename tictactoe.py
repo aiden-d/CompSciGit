@@ -54,7 +54,7 @@ def checkIfSame(array,l):
 
 
 def checkWin(r,c):
-    global rows, PlayerTurn, letter,  rows
+    global rows, PlayerTurn, letter
     row1 = rows[0]
     row2 = rows[1]
     row3 = rows[2]
@@ -97,6 +97,7 @@ def checkDraw():
         if i == " ":
             full = False
             return full
+    return True
 
         
 
