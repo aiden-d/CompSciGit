@@ -9,7 +9,7 @@ public class Rectangle  {
     float width;
     float height;
     public static void main(String[] args) {
-        
+
     }
     public Rectangle(){}
 
@@ -41,7 +41,7 @@ public class Rectangle  {
     public String toString(){return "Rectangle (" +xPos+","+yPos+")-("+(xPos+width)+","+yPos+height+")";}
 
     public void printShape() {
-       int i = 0;
+        int i = 0;
         while(i<height){
             String str = "";
             while (i<width){
@@ -49,8 +49,8 @@ public class Rectangle  {
             }
             System.out.println(str);
 
-       } 
+        }
     }
 
-    
+
 }

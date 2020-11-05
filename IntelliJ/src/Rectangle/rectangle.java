@@ -1,28 +1,25 @@
-package java;
+package Rectangle;
 
-/**
- * Rectangle
- */
-public class Rectangle  {
-    int xPos;
-    int yPos;
-    float width;
-    float height;
+public class rectangle  {
+    int xPos =0;
+    int yPos =0;
+    float width =3;
+    float height = 3;
     public static void main(String[] args) {
-        
-    }
-    public Rectangle(){}
 
-    public Rectangle(int xPos,int yPos){
+    }
+    public rectangle(){}
+
+    public rectangle(int xPos,int yPos){
         this.xPos = xPos;
         this.yPos = yPos;
     }
 
-    public Rectangle(float width,float height){
+    public rectangle(float width,float height){
         this.width = width;
         this.height = height;
     }
-    public Rectangle(float width,float height,int xPos,int yPos) {
+    public rectangle(float width,float height,int xPos,int yPos) {
         this.width = width;
         this.height = height;
         this.xPos = xPos;
@@ -41,16 +38,23 @@ public class Rectangle  {
     public String toString(){return "Rectangle (" +xPos+","+yPos+")-("+(xPos+width)+","+yPos+height+")";}
 
     public void printShape() {
-       int i = 0;
+
+        int i = 0;
         while(i<height){
             String str = "";
-            while (i<width){
-                str = str + "*";
+            int ii =0;
+            while (ii<width){
+
+                if((xPos+ii==xPos||xPos+ii+1==xPos+width)&&(yPos+i==yPos||yPos+i==yPos+height-1)){str = str + " *";}
+                str = str+"  ";
+                ii++;
             }
+            i++;
             System.out.println(str);
 
-       } 
+
+        }
     }
 
-    
+
 }
